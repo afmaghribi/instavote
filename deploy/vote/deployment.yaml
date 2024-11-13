@@ -23,4 +23,6 @@ spec:
       - image: schoolofdevops/vote:v1
         name: vote
         resources: {}
+        ports:
+        - containerPort: 80
 status: {}
