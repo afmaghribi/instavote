@@ -22,3 +22,8 @@ commonLabels:
 
 commonAnnotations:
   supportedBy: "lychnobyte.my.id"
+
+configMapGenerator:
+  - name: vote-options
+    envs:
+    - options.env

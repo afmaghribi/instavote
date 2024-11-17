@@ -14,4 +14,7 @@ spec:
       - image: schoolofdevops/vote:v3
         name: vote
         resources: {}
+        envFrom:
+        - configMapRef: vote-options
+          optional: true
 status: {}
