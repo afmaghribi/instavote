@@ -5,3 +5,20 @@ resources:
 patches:
 - path: deployment.yaml
 - path: service.yaml
+
+replicas:
+- name: vote
+  count: 8
+
+images:
+  - name: schoolofdevops/vote
+    newTag: v4
+
+namespace: instavote
+
+commonLabels:
+  project: instavote
+  env: staging
+
+commonAnnotations:
+  supportedBy: "lychnobyte.my.id"
