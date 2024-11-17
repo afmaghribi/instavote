@@ -15,6 +15,7 @@ spec:
         name: vote
         resources: {}
         envFrom:
-        - configMapRef: vote-options
-          optional: true
+        - configMapRef:
+            name: vote-options
+            optional: true
 status: {}
