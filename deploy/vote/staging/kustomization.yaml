@@ -9,7 +9,8 @@ replicas:
 - name: vote
   count: 8
 images:
-- name: afmaghribi/vote
+- name: schoolofdevops/vote
+  newName: afmaghribi/vote
   newTag: main-50d66401-1733321963 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
 commonLabels:
