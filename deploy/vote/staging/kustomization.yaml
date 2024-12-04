@@ -11,7 +11,7 @@ replicas:
 images:
 - name: schoolofdevops/vote
   newName: afmaghribi/vote
-  newTag: main-50d66401-1733321963 # {"$imagepolicy": "flux-system:vote:tag"}
+  newTag: main-93a27bf3-1733328432 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
 commonLabels:
   project: instavote
